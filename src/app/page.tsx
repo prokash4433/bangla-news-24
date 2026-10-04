@@ -1,8 +1,11 @@
+import Marquee from "@/components/Marquee";
+
  
 
 export default function Home() {
   return (
      <div>
+      <Marquee/>
 
       ট্রাম্পের রপ্তানি নিষেধাজ্ঞা হুমকির পর ১০ কোটি ব্যারেল তেল ও ডিজেল ছাড়ার সিদ্ধান্ত নিল জি-৭
       প্রধান খবর

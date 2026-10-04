@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import NavLinks from "./NavLinks";
 
 const Header = () => {
           const date = new Date().toLocaleDateString("bn-BD", {
@@ -7,7 +8,7 @@ const Header = () => {
           });
 
           return (
-                    <header className="max-w-7xl mx-auto h-20 grid grid-cols-3 items-center px-4">
+                    <header className="max-w-7xl mx-auto h-20 grid grid-cols-3 items-center px-4 mt-5">
 
                               {/* Left */}
                               <div></div>
@@ -34,7 +35,7 @@ const Header = () => {
                               </div>
 
                               {/* Sign In / Sign Up */}
-                              <div className="flex justify-end items-center gap-2 translate-x-48    ">
+                              <div className="flex justify-end items-center gap-2 translate-x-8   ">
                                         <button className="btn">
                                                   সাইন ইন
                                         </button>
@@ -43,6 +44,8 @@ const Header = () => {
                                                   সাইন আপ
                                         </button>
                               </div>
+
+                              <NavLinks/>
 
                     </header>
           );
